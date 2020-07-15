@@ -240,14 +240,14 @@ robot and a simple environment.
 At this point, you can use iw_console to manually add a Desire to the IW:
 
     $ rosrun iw_tools iw_console
-    > add GoTo 1 1 {frame_id: 'map', x: 3.0, y: 3.0, t: 0.0}
+    > add GoTo 1 1 {frame_id: 'map', x: 2.0, y: 0.5, t: 0.0}
     > quit
 
 The 'add' line creates a Desire of the GoTo class, with an intensity of 1 and a 
 utility requirement of 1.
 The remaining part of the line is interpreted as JSON and sent to the Desire
 activation script. Here, the structure indicates that the goal is in the 'map' 
-TF frame, at a position of (x,y) = (3.0, 3.0), with an orientation (theta angle)
+TF frame, at a position of (x,y) = (2.0, 0.5), with an orientation (theta angle)
 of 0.0 radians relative to the X axis.
 
 If everything worked correctly, the robot should slowly move to the requested
