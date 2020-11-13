@@ -105,7 +105,12 @@ The whole distribution also requires those system dependencies:
  - bison
  - flex
  - libv8-dev
+ - libyaml-cpp-dev
 
+And ROS packages (in addition to ros-melodic-base):
+ - tf
+ - move_base_msgs
+ 
 To build the distribution, do not forget to fetch the hbba_base submodule like
 this (from the root directory of this repository):
 
